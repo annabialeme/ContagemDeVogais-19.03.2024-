@@ -1,5 +1,5 @@
-//Defini a string original que contém a frase "Meu nome é Júlia!".
-let string = "Meu nome é Júlia!";
+//Defini a string original que contém a frase "Ola, Bom dia!".
+let string = "Ola, Bom dia!";
 //Variável quantasVogaisTem, que será usada para contar o número de vogais na string.
 let quantasVogaisTem = 0;
 //Variável qualVogal, que será usada para armazenar as vogais encontradas.
@@ -25,7 +25,7 @@ for (let i = 0; i < semAcento.length; i++) {
     }
 }
 
-console.log(semAcento);//Meu nome e Julia!
+console.log(semAcento);//Ola, Bom Dia!
 console.log("Número total de vogais:", quantasVogaisTem);//Número total de vogais: 8 
 //O método join(',') para converter o array em uma string, onde cada elemento é separado por uma vírgula seguida de um espaço. 
 console.log("Vogais encontradas:", qualVogal.join(', '));//Vogais encontradas: e, u, o, e, e, u, i, aS
