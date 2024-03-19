@@ -7,7 +7,7 @@ let qualVogal = [];
 
 //O método normalize() é usado para normalizar a string de acordo com uma forma específica. 
 //Forma "NFD" (Normalização de Decomposição Canônica) para decompor os caracteres Unicode(é um esquema de codificação de caracteres de comprimento fixo que inclui caracteres de quase todas as línguas vivas do mundo) em sua forma básica e seus diacríticos (acento, cedilha etc.). 
-//A linha com '.replace()' foi adicionada para remover os caracteres diacríticos (como acentos) da string (), junto a uma expressão regular para substituir todos os caracteres diacríticos por uma string vazia, garantindo que a string resultante (semAcento) não contenha mais caracteres acentuados. 
+//A linha com '.replace()' foi adicionada para remover os caracteres diacríticos (como acentos) da string (), junto a uma expressão para substituir todos os caracteres diacríticos por uma string vazia, garantindo que a string resultante (semAcento) não contenha mais caracteres acentuados. 
 // A regex é uma combinacão dos códigos dos acentos possíveis. /[\u0300-\u036f]/g,""
 let semAcento = string.normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 
@@ -28,4 +28,4 @@ for (let i = 0; i < semAcento.length; i++) {
 console.log(semAcento);//Ola, Bom Dia!
 console.log("Número total de vogais:", quantasVogaisTem);//Número total de vogais: 8 
 //O método join(',') para converter o array em uma string, onde cada elemento é separado por uma vírgula seguida de um espaço. 
-console.log("Vogais encontradas:", qualVogal.join(', '));//Vogais encontradas: e, u, o, e, e, u, i, aS
+console.log("Vogais encontradas:", qualVogal.join(', '));//Vogais encontradas: O, a, o, i, a
